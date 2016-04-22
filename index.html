@@ -33,11 +33,11 @@
 <body>	
 	<img src="logo.png" alt="Parlamento de Andalucía"  width="300" height="70" class="centrado">
     
-    <p align="center"><titulo1 id="fecha"></titulo1></p>
-    <hr style="color: green;" />
+    	<p align="center"><titulo1 id="fecha"></titulo1></p>
+    	<hr style="color: green;" />
           
-    <p align="center"><canal>Canal 1</canal></p>
-    	<audio controls autoplay>
+    	<p align="center"><canal>Canal 1</canal></p>
+    	<p align="center"><audio controls autoplay>
   <!--
   	<source src="http://193.147.254.64:1935/parlamento1/_definst_/parlamento1.stream/playlist.m3u8">
   	<source src="http://193.147.254.64:1935/parlamento2/_definst_/parlamento2.stream/playlist.m3u8">
@@ -49,7 +49,7 @@
   	<source src="http://193.147.254.64:1935/parlamento1/_definst_/parlamento1.stream/playlist.m3u8">
   	
 	Your browser does not support the video tag.
-	</audio>
+	</audio></p>
       
 </body>
 </html>
@@ -57,7 +57,7 @@
 <!-- ------------------------------------------------------------------------------- -->
 <script>      
 	var fecha = new Date();
-    var month = new Array();
+    	var month = new Array();
 	month[0] = "Enero";
 	month[1] = "Febrero";
 	month[2] = "Marzo";
@@ -72,7 +72,7 @@
 	month[11] = "Diciembre";
 	var mes = month[fecha.getMonth()];
 	var dia = fecha.getDay();
-    var ano = fecha.getFullYear();  
+    	var ano = fecha.getFullYear();  
                 
-    document.getElementById("fecha").innerHTML = dia + " de " + mes + " de " + ano;      
+    	document.getElementById("fecha").innerHTML = dia + " de " + mes + " de " + ano;      
 </script>

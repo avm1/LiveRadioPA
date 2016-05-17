@@ -2,6 +2,7 @@
   <name>Radio Parlamento Andaluz</name>
   <description>Retransmisiones en directo desde del Parlamento de Andalucía</description>
   <author href="http://www.parlamentodeandalucia.es" email="a.vilches@parlamento-and.es">Parlamento de andalucía</author>
+  <platform name="android"></platform>
   <content src="index.html"/>
   
   <preference name="permissions" value="none"/>
@@ -45,5 +46,11 @@
   <icon src="www/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi"/>
   <icon src="www/icon-48.png" gap:platform="winphone"/>
   <icon src="www/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
-  <access origin="*"/>
+  
+  <plugin name="cordova-plugin-whitelist" version="1" />    
+  <access origin="*" />
+  <allow-navigation href="*" />
+  <allow-intent href="http://*/*" />
+  <allow-intent href="https://*/*" />
+  
 </widget>
